@@ -8,9 +8,16 @@ body {
   font-size: 1rem;
 }
 
-.backgnd_img {
-  width: 100%;
+.show_mobile, .show_mobile a {
+  display: none;
+}
+
+.backgnd, .backgnd_img {
   height: 30rem;
+  width: 100%;
+}
+
+.backgnd_img {
   position: absolute;
   top: 0rem;
   left: 0rem;
@@ -30,11 +37,6 @@ body {
   overflow: visible;
 }
 
-.backgnd {
-  height: 30rem;
-  width: 100%;
-}
-
 .banner {
   width: 100%;
   display: flex;
@@ -44,7 +46,7 @@ body {
   margin-bottom: 10rem;
 }
 
-.banner div {
+.banner div.show_desktop {
   display: flex;
   align-items: center;
 }
@@ -132,6 +134,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.description p {
+  margin-bottom: 4rem;
+}
+
 footer {
   display: flex;
   align-items: center;
@@ -142,4 +148,110 @@ footer {
 footer img {
   height: 1.5rem;
   padding: 4rem 1rem 4rem 4rem;
+}
+
+@media only screen and (max-width: 960px) {
+  .backgnd, .backgnd_img {
+    height: 22rem;
+  }
+
+  .container {
+    width: 100%;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    margin-left: 0px;
+  }
+
+  .banner {
+    margin-top: 0rem;
+    margin-bottom: 5rem;
+  }
+
+  .block {
+    left: 0rem;
+    margin-right: 2rem;
+  }
+
+  .block span {
+    font-size: 1.33rem;
+    padding: .75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .backgnd, .backgnd_img {
+    height: 17rem;
+  }
+
+  .backgnd_img {
+    background-position: 20%;
+  }
+
+  .show_desktop, .show_desktop a {
+    display: none;
+  }
+
+  .show_mobile, .show_mobile a {
+    display: flex;
+    align-items: center;
+  }
+
+  .banner {
+    margin-bottom: 9rem;
+  }
+
+  .block {
+    margin-right: 0rem;
+    width: 100%;
+  }
+
+  .block span {
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.5rem 0rem;
+  }
+
+  .benefits {
+    flex-direction: column;
+    align-items: center;
+    margin: 3rem 0rem;
+  }
+
+  .benefits div {
+    height: auto;
+    margin: 0.77rem 0rem;
+  }
+
+  .benefits span {
+    margin-top: 0.77rem;
+    font-size: 0.77rem;
+  }
+
+  .description {
+    flex-direction: column;
+  }
+
+  .description div {
+    flex-direction: column;
+    width: 100%;
+    margin-right: 0%;
+  }
+
+  .description h3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .description p {
+    font-size: 0.77rem;
+    margin-bottom: 4rem;
+  }
+
+  footer {
+    margin-top: 1rem;
+  }
+
+
 }
