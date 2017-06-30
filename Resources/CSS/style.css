@@ -251,7 +251,10 @@ footer img {
 
   footer {
     margin-top: 1rem;
+    justify-content: center;
   }
 
-
+  footer img {
+    padding: 4rem 0rem;
+  }
 }
