@@ -150,7 +150,7 @@ footer img {
   padding: 4rem 1rem 4rem 4rem;
 }
 
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 1000px) {
   .backgnd, .backgnd_img {
     height: 22rem;
   }
